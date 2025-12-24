@@ -1,7 +1,7 @@
 variable "databricks_profile" {
     description = "Authentication Profile"
     type = string
-    default = "DEFAULT"
+    default = "dev"
 }
 
 variable "databricks_host" {
@@ -18,4 +18,11 @@ variable "environment" {
 variable "project_name" {
     type = string
     default = "shopstream"
+}
+
+
+variable "external_storage_location" {
+    type = string
+    default = "s3://amzn-databricks-pro-storage/"
+
 }
