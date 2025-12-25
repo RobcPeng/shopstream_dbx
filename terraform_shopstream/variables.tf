@@ -1,28 +1,31 @@
-variable "databricks_profile" {
-    description = "Authentication Profile"
-    type = string
-    default = "dev"
-}
-
-variable "databricks_host" {
-    type = string
-    default = "https://dbc-5db479c3-cbc2.cloud.databricks.com/"
+variable "project_name" {
+  type    = string
+  default = "shopstream"
 }
 
 variable "environment" {
-    description = "dev, stage, prod"
-    type = string
-    default = "dev"
-} 
-
-variable "project_name" {
-    type = string
-    default = "shopstream"
+  description = "dev, stage, prod"
+  type        = string
+  default     = "dev"
 }
 
-
-variable "external_storage_location" {
-    type = string
-    default = "s3://amzn-databricks-pro-storage/"
-
+locals {
+  env_config = {
+    dev = {
+      databricks_host    = "https://dbc-9bb4ffe7-f810.cloud.databricks.com"
+      databricks_profile = "dev"
+      external_storage   = "s3://amzn-databricks-pro-storage-west/"
+    }
+    stage = {
+      databricks_host    = "https://dbc-f6c570d2-5aca.cloud.databricks.com"
+      databricks_profile = "stage"
+      external_storage   = "s3://amzn-databricks-pro-storage-west/"
+    }
+    prod = {
+      databricks_host    = "https://dbc-f6c570d2-5aca.cloud.databricks.com"
+      databricks_profile = "prod"
+      external_storage   = "s3://amzn-databricks-pro-storage-west/"
+    }
+  }
+  current_env = local.env_config[var.environment]
 }
