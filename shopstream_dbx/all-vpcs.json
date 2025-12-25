@@ -1,0 +1,128 @@
+{
+    "Vpcs": [
+        {
+            "OwnerId": "248189910768",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0f7321d2283c17675",
+                    "CidrBlock": "10.35.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "databricks-compute-vpc-7474652232850898"
+                }
+            ],
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-0c23cebd3c5db4f6c",
+            "State": "available",
+            "CidrBlock": "10.35.0.0/16",
+            "DhcpOptionsId": "dopt-0be0ae1cfed24bc8f"
+        },
+        {
+            "OwnerId": "248189910768",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-00f63c64487ad020d",
+                    "CidrBlock": "10.47.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "databricks-compute-vpc-7474657013508829"
+                }
+            ],
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-00920c372e152d3ca",
+            "State": "available",
+            "CidrBlock": "10.47.0.0/16",
+            "DhcpOptionsId": "dopt-0866d4e4f60557abf"
+        },
+        {
+            "OwnerId": "248189910768",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-02c5105deb1a0622a",
+                    "CidrBlock": "10.53.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "AWSMarketplaceQuicklaunch-DatabricksDeploymentStack-2e571492-20bf-482f-b459-413b6a3f8771-DatabricksVPC"
+                },
+                {
+                    "Key": "Vendor",
+                    "Value": "Databricks"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-west-2:248189910768:stack/AWSMarketplaceQuicklaunch-DatabricksDeploymentStack-2e571492-20bf-482f-b459-413b6a3f8771/59bcd1d0-e12d-11f0-b20e-0a044fc68e69"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "DBSVpc"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "AWSMarketplaceQuicklaunch-DatabricksDeploymentStack-2e571492-20bf-482f-b459-413b6a3f8771"
+                }
+            ],
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-04f9ac62da973cdeb",
+            "State": "available",
+            "CidrBlock": "10.53.0.0/16",
+            "DhcpOptionsId": "dopt-0ae296e247e271c0a"
+        },
+        {
+            "OwnerId": "248189910768",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0a55ef40bbf989977",
+                    "CidrBlock": "10.35.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "databricks-compute-vpc-7474658668877914"
+                }
+            ],
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-042c70b8ef4eb81c7",
+            "State": "available",
+            "CidrBlock": "10.35.0.0/16",
+            "DhcpOptionsId": "dopt-06973ed8aa2df3929"
+        }
+    ]
+}
